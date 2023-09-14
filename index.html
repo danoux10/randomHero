@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Random Hero</title>
+	<link class="favicon" href="image/shuffle-solid.svg" rel="shortcut icon" type="image/x-icon">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+	<button class="spinBtn" onclick="spinning('tankWheel')">Spin</button>
+	<div class="wheel" id="tankWheel"></div>
+</div>
+
+<div class="container">
+	<button class="spinBtn" onclick="spinning('dpsWheel')">Spin</button>
+	<div class="wheel" id="dpsWheel"></div>
+</div>
+
+<div class="container">
+	<button class="spinBtn" onclick="spinning('supportWheel')">Spin</button>
+	<div class="wheel" id="supportWheel"></div>
+</div>
+
+<script src="generateData.js"></script>
+<script src="spinGenerate.js"></script>
+<script src="spinning.js"></script>
+
+</body>
+</html>

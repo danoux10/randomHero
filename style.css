@@ -1,0 +1,102 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 99vh;
+}
+
+.container {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .spinBtn {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.16rem;
+  border: 4px solid rgba(0, 0, 0, 0.75);
+  user-select: none;
+}
+.container .spinBtn:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  width: 20px;
+  height: 30px;
+  background: #fff;
+  clip-path: polygon(50% 0, 15% 100%, 85% 100%);
+}
+.container .wheel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
+  transition: transform 5s ease-in-out;
+}
+.container .wheel .number {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform-origin: bottom right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.container .wheel .number p {
+  font-size: 1.6rem;
+  position: relative;
+  font-weight: bold;
+  transform: rotate(45deg);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 378px) {
+  body {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
