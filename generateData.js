@@ -28,7 +28,7 @@ var tank = [
     color: '9370db',
   },
   {
-    name: 'Reine',
+    name: 'Junker Queen',
     color: '97ceeb',
   },
   {
