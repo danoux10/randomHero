@@ -16,6 +16,10 @@ var tank = [
     color: 'ed93c7',
   },
   {
+    name: 'Mauga',
+    color: 'dc143c',
+  },
+  {
     name: 'Doomfist',
     color: '815049',
   },
